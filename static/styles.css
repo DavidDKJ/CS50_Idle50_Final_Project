@@ -1,0 +1,110 @@
+/* Using Bootstrap and emulating the CS50 layout */
+body {
+    font-family: "PT Sans"
+}
+.message {
+    --bs-message-padding-x: 1rem;
+    --bs-message-padding-y: 1rem;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    padding: var(--bs-message-padding-y) var(--bs-message-padding-x);
+    margin-bottom: 0;
+    color: #0a3622;
+    background-color: #d1e7dd;
+    border: 1px solid #a3cfbb;
+    border-radius: .375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2)
+}
+p {
+    margin-bottom:0
+}
+aside {
+    font-size: 1.13rem
+}
+.sidebar {
+    position: fixed;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 20.3rem;
+    padding: 3rem 2rem;
+    padding-bottom: 5rem;
+    overflow-y: scroll;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2)
+}
+aside > a, aside > div > a {
+    color: white;
+    text-decoration: none
+}
+.value {
+    --bs-sidepar-margin-y: 1rem;
+    padding: var(--bs-sidepar-margin-y) 0
+}
+.grey{
+    color: grey
+}
+#progress {
+    margin-bottom: 2rem;
+    width: 17rem;
+    height: 0.5rem;
+}
+.button {
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(100,100,100,0.5);
+    padding: .35rem .35rem
+}
+.button:hover {
+    box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.75), inset -0.2em -0.2em 0.2em 0 rgba(100,100,100,0.75)
+}
+.button, #home, .topic, .problem, .project {
+    cursor: pointer;
+    user-select: none
+}
+.button:active {
+    box-shadow: 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), -0.2em -0.2em 0.2em 0 rgba(100,100,100,0.5)
+}
+.table {
+    color: white;
+    text-align: center
+}
+main {
+    --bs-main-padding-x: 22rem;
+    --bs-main-padding-y: 5rem;
+    padding: var(--bs-main-padding-y) var(--bs-main-padding-x);
+}
+.subtitle {
+    font-size: 28px;
+}
+.lecture, .set {
+    position: relative;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10rem;
+    background: white;
+    border: solid
+}
+.topic, .problem, .project {
+    position: absolute;
+    height: 99%;
+    width: 32.67%;
+    background: white;
+    text-align: center;
+    line-height: 500%;
+    border: outset
+}
+.topic:active, .problem:active, .project:active {
+    border: inset
+}
+.left {
+    top: 0.5%;
+    left: 0.5%
+}
+.middle {
+    top: 0.5%;
+    left: 33.67%
+}
+.right {
+    top: 0.5%;
+    right: 0.5%
+}
