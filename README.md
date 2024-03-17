@@ -15,7 +15,7 @@ Server side it is running via Flask. With Javascript I've implemented some eleme
 This was a really fun test of my knowledge and, while stressful and not everything I wanted it to be, I'm happy with it, and somewhat proud.
 
 For a more thorough examination of the code behind it:
-Firstly, I've designed a layout that keeps a static sidebar designed to look much like CS50's own sidebar. From there the scripting loads the index html into the contents of <main>.
+Firstly, I've designed a layout that keeps a static sidebar designed to look much like CS50's own sidebar. From there the scripting loads the index html into the contents of main.
 From there, you can click through any of the weeks on the sidebar. Each is linked to its own html file, which is similarly loaded into main via jquery.
 
 Then, each week contains a lecture: 3 buttons that automatically progress (as you can see in a progress bar, also located on the sidebar). Each reports its task name and week it belongs to by sending a json POST. The server then updates a dictionary containing keys that reflect all completed tasks, and how many tasks in each week have been completed.
